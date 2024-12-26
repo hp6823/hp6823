@@ -1,36 +1,231 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Test</title>
+<title>Niki Lash Studio | Beauty Salon</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<style>
+  header {
+    padding: 150px;
+  }
 
+  body {
+    margin: 0;
+  }
+  .main-container {
+    display: flex;
+  }
+  .sidebar {
+    width: 280px;
+    background-color: #343a40;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  .list-group-item a {
+    text-decoration: none;
+    color: white;
+  }
+  .list-group-item a:hover {
+    text-decoration: underline;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+</style>
 </head>
+
 <body>
-    <div class="container">
-        <header class="d-flex justify-content-center py-3">
-          <ul class="nav nav-pills">
-            <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
-            <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-          </ul>
-        </header>
+  <!-- Header -->
+  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+    <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+      <span class="fs-4">Simple header</span>
+    </a>
+
+    <ul class="nav nav-pills">
+      <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Home</a></li>
+      <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+      <li class="nav-item"><a href="henna.html" class="nav-link">Henna</a></li>
+    </ul>
+  </header>
+  
+  <!-- Main Container -->
+  <div class="main-container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+        <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <span class="fs-4">Sidebar</span>
+      </a>
+      <hr>
+      <ul class="nav nav-pills flex-column mb-auto">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link active" aria-current="page">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"></use></svg>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="#services" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"></use></svg>
+            Services
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"></use></svg>
+            Orders
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"></use></svg>
+            Products
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link text-white">
+            <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"></use></svg>
+            Customers
+          </a>
+        </li>
+      </ul>
+      <hr>
     </div>
 
-    <div class="container my-5">
-        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
-          <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-            <h1 class="display-4 fw-bold lh-1 text-body-emphasis">Border hero with cropped image and shadows</h1>
-            <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
-              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 fw-bold">Primary</button>
-              <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
-            </div>
-          </div>
-          <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
-              <img class="rounded-lg-3" src="lashes_image.png" alt="" width="450">
-          </div>
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- <div class="p-4 border rounded shadow-sm">
+        <h1 class="display-5 fw-bold">Welcome to Niki Lash Studio</h1>
+        <p class="lead">
+          Experience the art of beauty with our expert lash and henna services. Our team is dedicated to helping you look and feel your best with customized treatments tailored to your needs.
+        </p>
+        <div class="d-flex gap-2">
+          <button type="button" class="btn btn-primary">Book Now</button>
+          <button type="button" class="btn btn-outline-secondary">Learn More</button>
         </div>
+        <div class="mt-4">
+          <img src="lashes_image.png" alt="Beautiful lashes" class="img-fluid rounded">
+        </div>
+      </div> -->
+
+      <section id="services">
+        <div class="view">
+          <div class="container">
+        
+            <div class="row">
+							<div class="col-md-3 col-sm-6  col-xs-6">
+								<div class="hover-overlay">
+									<img alt="Mike Johnson" src="lashes_image.png" title="Mike Johnson" class="fluid-width" style="width: 100%; height: 200px; object-fit: cover;">
+									<div class="overlay background-90-b">
+										<div>
+											<p class="text-center text-uppercase heading-b">
+												WAXING
+											</p>
+											<div class="separator-small"></div>
+											
+										</div>
+								  </div>
+								</div>
+								<div class="caption">
+									<p>
+										<span class="title">WAXING TREATMENT</span>
+										<br>
+										<a href="mailto:contact@nikkisalon.com"><span class="highlight">Book an appointment.</span></a>
+									</p>
+								</div>
+							</div>
+
+							<div class="col-md-3 col-sm-6  col-xs-6">
+								<div class="hover-overlay">
+									<img alt="Lynda Smith" src="lashes_image.png" title="Lynda Smith" class="fluid-width" style="width: 100%; height: 200px; object-fit: cover;">
+									<div class="overlay background-90-b">
+										<div>
+											<p class="text-center text-uppercase heading-b">
+												HENNA TATTOO
+											</p>
+											<div class="separator-small"></div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="caption">
+									<p>
+										<span class="title">Henna &amp; SAREE WRAP</span>
+										<br>
+										<a href="mailto:contact@nikkisalon.com"><span class="highlight">Book us for Bridal Parties.</span></a>
+									</p>
+								
+							</div>
+						</div>
+
+            <div class="row">
+              <div class="col-md-3 top-line">
+                <p></p>
+                <p class="highlight">Our waxing services will remove excess body hair and uncover silky smooth skin while staying hair free longer than other treatment methods.  </p>
+                <ul class="simple">
+                  <li>EYEBROW.... $15</li>
+                  <li>UPPER LIP.... $10</li>
+                  <li>LOWER LIP.... $5</li>
+                </ul>
+              </div>
+              
+              <div class="col-md-3 top-line"><p></p>
+                <p class="highlight">Our signature, organic-thread treatment is a breeze. Fast, natural, and subtle, threading doesn’t damage or irritate skin (like tweezing), and is perfect whether you’re looking to dramatically reshape or just tune up your brow game.</p>
+                  <ul class="simple">
+                    <li>CHIN.... $10 AND UP</li>
+                    <li>FOREHEAD.... $10</li>
+                    <li>SIDE OF FACE.... $20</li>
+                  </ul>
+              </div>  
+            </div>
+
+			    </div>
+        </div>
+      </section>
     </div>
+  </div>
 </body>
+
+<!-- Footer -->
+<footer class="py-5">
+  <div class="row">
+    <div class="col-6 col-md-2 mb-3">
+        <h5>Section</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
+            <li class="nav-item mb-2"><a href="services.html" class="nav-link p-0 text-body-secondary">Services</a></li>
+            <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-body-secondary">About</a></li>
+            <li class="nav-item mb-2"><a href="henna.html" class="nav-link p-0 text-body-secondary">Henna</a></li>
+        </ul>
+    </div>
+
+    <div class="col-6 col-md-2 mb-3">
+        <h5>Contact Us</h5>
+        <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="tel:+6302374725" class="nav-link p-0 text-body-secondary">(630) 237-4725</a></li>
+            <li class="nav-item mb-2"><a href="mailto:nikilashstudio@gmail.com" class="nav-link p-0 text-body-secondary">nikilashstudio@gmail.com</a></li>
+        </ul>
+    </div>
+  </div>
+
+  <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+    <p>© 2024 Company, Inc. All rights reserved.</p>
+    <ul class="list-unstyled d-flex">
+        <li class="ms-3"><a class="link-body-emphasis" href="https://g.page/r/CWq0mqQKmi2YEAE/review"><i class="bi bi-google" width="24" height="24"></i></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/nikilashstudio16"><i class="bi bi-instagram" width="24" height="24"></i></a></li>
+        <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/people/Niki-Lash-Studio/100090511201613/"><i class="bi bi-facebook" width="24" height="24"></i></a></li>                
+    </ul>
+  </div>
+</footer>
+
 </html>
