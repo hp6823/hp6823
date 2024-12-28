@@ -4,42 +4,11 @@
 <title>Niki Lash Studio | Beauty Salon</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<style>
-  header {
-    padding: 150px;
-  }
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 
-  body {
-    margin: 0;
-  }
-  .main-container {
-    display: flex;
-  }
-  .sidebar {
-    width: 280px;
-    background-color: #343a40;
-    color: white;
-    display: flex;
-    flex-direction: column;
-  }
-  .main-content {
-    flex-grow: 1;
-    padding: 20px;
-  }
-  .list-group-item a {
-    text-decoration: none;
-    color: white;
-  }
-  .list-group-item a:hover {
-    text-decoration: underline;
-  }
-  footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f9fa;
-  }
-</style>
 </head>
 
 <body>
@@ -47,7 +16,7 @@
   <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
     <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
       <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-      <span class="fs-4">Simple header</span>
+      <span class="fs-4">Niki Lash Studio</span>
     </a>
 
     <ul class="nav nav-pills">
@@ -55,6 +24,7 @@
       <li class="nav-item"><a href="services.html" class="nav-link active">Services</a></li>
       <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
       <li class="nav-item"><a href="henna.html" class="nav-link">Henna</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
     </ul>
   </header>
   
@@ -104,7 +74,7 @@
 
     <!-- Main Content -->
     <div class="main-content">
-      <!-- <div class="p-4 border rounded shadow-sm">
+      <div class="p-4 border rounded shadow-sm" style="background-image: url(lashes_image.png); background-size: cover; background-position: center; background-image: ;">
         <h1 class="display-5 fw-bold">Welcome to Niki Lash Studio</h1>
         <p class="lead">
           Experience the art of beauty with our expert lash and henna services. Our team is dedicated to helping you look and feel your best with customized treatments tailored to your needs.
@@ -113,12 +83,10 @@
           <button type="button" class="btn btn-primary">Book Now</button>
           <button type="button" class="btn btn-outline-secondary">Learn More</button>
         </div>
-        <div class="mt-4">
-          <img src="lashes_image.png" alt="Beautiful lashes" class="img-fluid rounded">
-        </div>
-      </div> -->
+      </div>
 
       <section id="services">
+        <h1>Services</h1>
         <div class="view">
           <div class="container">
         
@@ -194,30 +162,61 @@
       </section>
     </div>
   </div>
+
+  <section id="contact">
+    <div class="view">
+      <img alt="" class="bg" src="images/placeholders/1920x1200-2.jpg" style="transform: translate3d(-508.4px, -88px, 0px) scale(1.03663, 1.03663); opacity: 1; transform-origin: right top 0px;"><img alt="" class="bg" src="images/placeholders/1920x1200-0.jpg" style="transform: translate3d(-430px, -112.5px, 0px) scale(0.97265, 0.97265); opacity: 0.253051; transform-origin: left center 0px;"><img alt="" class="bg" src="images/placeholders/1920x1200-1.jpg" style="transform: translate3d(-508.4px, -88px, 0px) scale(1.05508, 1.05508); opacity: 0; transform-origin: right top 0px;">
+      <div class="content full-size colors-h" style="padding-top: 70px; padding-bottom: 70px;">
+        <div class="container">
+          <h2>Contact</h2>
+          <p class="header-details">Keep In Touch</p>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="text-right" data-aos="fade-left">
+                <p class="big-font uppercase">
+                  Tel: <strong class="highlight">(773) 687-8022</strong>
+                </p>
+                <p class="big-font uppercase">
+                  746 N DAMEN AVE
+                  <br> CHICAGO, IL, 60622 US
+                </p>
+                <p class="big-font">
+                  <b>HOURS</b></p><p></p> Mon-Fri 11:00am - 7:00pm<br>
+                Sat 9:00am - 4:00pm<br>
+                Sun 11:00am - 4:00pm<br>
+                
+                <a href="mailto:contact@nikkisalon.com">contact@nikkisalon.com</a><br>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="text-left" data-aos="fade-right">
+                <script type="text/javascript" src="https://form.jotform.com/jsform/81609233584157" data-iframe-appended="true"></script><iframe title="Responsive Layout -  General Inquiry Contact Form" src="https://form.jotform.com/81609233584157?parentURL=http%3A%2F%2Fwww.nikkisalon.com%2F&amp;jsForm=true" allow="geolocation; microphone; camera; fullscreen" name="81609233584157" id="81609233584157" scrolling="no" style="width: 10px; min-width: 100%; display: block; overflow: hidden; height: 625px; border: none;"></iframe>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="text-center"> -->
+            
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      AOS.init({
+        duration: 1200,
+        once: true,
+      });
+    });
+  </script>
+
 </body>
 
 <!-- Footer -->
 <footer class="py-5">
-  <div class="row">
-    <div class="col-6 col-md-2 mb-3">
-        <h5>Section</h5>
-        <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a></li>
-            <li class="nav-item mb-2"><a href="services.html" class="nav-link p-0 text-body-secondary">Services</a></li>
-            <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-body-secondary">About</a></li>
-            <li class="nav-item mb-2"><a href="henna.html" class="nav-link p-0 text-body-secondary">Henna</a></li>
-        </ul>
-    </div>
-
-    <div class="col-6 col-md-2 mb-3">
-        <h5>Contact Us</h5>
-        <ul class="nav flex-column">
-            <li class="nav-item mb-2"><a href="tel:+6302374725" class="nav-link p-0 text-body-secondary">(630) 237-4725</a></li>
-            <li class="nav-item mb-2"><a href="mailto:nikilashstudio@gmail.com" class="nav-link p-0 text-body-secondary">nikilashstudio@gmail.com</a></li>
-        </ul>
-    </div>
-  </div>
-
   <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
     <p>© 2024 Company, Inc. All rights reserved.</p>
     <ul class="list-unstyled d-flex">
@@ -227,5 +226,4 @@
     </ul>
   </div>
 </footer>
-
 </html>
